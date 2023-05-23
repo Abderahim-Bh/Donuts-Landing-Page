@@ -1,0 +1,245 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+.container{
+    height: 100vh;
+    background-color: #EC9E94;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.container .content{
+    height: 70%;
+    width: 70%;
+    background-color: #FBEAE6;
+    box-shadow: 0px 0px 30px rgba(71, 70, 70, 0.2);
+    border-radius: 20px;
+}
+
+.container .content header{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    width: 93%;
+    margin: 25px auto;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(122, 121, 121, 0.1);
+
+}
+.container .content nav ul{
+    display: flex;
+    list-style: none;
+    margin-right: 20px;
+}
+.container .content nav ul li{
+    text-decoration: none;
+    margin-left: 20px ;
+    
+    
+}
+.container .content nav ul li a{
+    color: rgb(83, 84, 85);
+    text-decoration: none;
+    font-size: 13px;
+    transition: all 0.2s ease;
+}
+.container .content header span{
+    margin-left: 15px;
+    flex-grow: 1;
+    font-size: 16px;
+}
+.container .content header button{
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 2px solid #EC9E94;
+    margin-right: 10px;
+    color: #EC9E94;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    outline: none;
+}
+.container .content header button:hover{
+    color: white;
+    background-color: #EC9E94;
+}
+.container .content header button:active{
+    background-color: #e9b1a9;
+}
+.container .content nav ul li a:hover{
+    color: #EC9E94;
+}
+
+.container .content main{
+    height: 75%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+main .navigation .div{
+
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    outline: none;
+    border: 2px solid rgba(255, 191, 191, 0.678);
+
+}
+.container .content main .imgs img{
+    width: 300px;
+    animation-name: animateTwo;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    transition: all 0.2s ease;
+}
+
+
+
+.informations{
+    height: 350px;
+    width:400px ;
+    display: flex;
+    flex-direction: column;
+}
+
+.div img{
+    height: 30px;
+
+}
+main .navigation .div:hover{
+    background-color: blanchedalmond;
+    
+}
+.container .content .informations h1{
+    
+    color: #eb8173;
+    font-size: 35px;
+}
+.container .content .informations p{
+    margin-top: 10px;
+    font-size: 12px;
+    color: rgb(95, 94, 94);
+    
+}
+.container .content .informations .info{
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.container .content .informations .info .a{
+    font-size: 14px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    color: rgb(54, 54, 54);
+}
+.container .content .informations .info .a span:nth-child(2){
+    font-size: 11px;
+    color: rgb(150, 151, 151);
+}
+
+
+
+
+
+
+
+
+.container .content .informations .buttons{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.container .content .informations .buttons .increasDecreas{
+    background-color: white;
+    border-radius: 10px;
+    width: 100px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 5px 10px rgba(122, 121, 121, 0.1);
+
+}
+.container .content .informations .buttons .increasDecreas span{
+    color: #eb8173;
+}
+.container .content .informations .buttons .increasDecreas button{
+    width: 25px;
+    border: none;
+    padding: 4px;
+    background-color: transparent;
+    color: #eb8173;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+.container .content .informations .buttons .increasDecreas button:hover
+{
+    background-color: #FBEAE6;
+}
+.container .content .informations .buttons .increasDecreas button:active
+{
+    background-color: #fbf9f8;
+}
+.container .content .informations .buttons .addTo{
+    background-color: #eb8173;
+    width: 70%;
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    box-shadow: 0px 5px 10px rgba(122, 121, 121, 0.2);
+    cursor: pointer;
+ 
+}
+.container .content .informations .buttons .addTo:hover{
+    animation-name: animate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-duration: 10s;
+}
+@keyframes animate {
+    0%,100%{
+        background-color: #eb8173;
+    }
+    50%{
+        background-color: #ffbdae;
+    }
+}
+@keyframes animateTwo {
+    0%,100%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-30px);
+
+    }
+}
